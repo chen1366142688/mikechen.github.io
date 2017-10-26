@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/brandTwo/brandTwo",
+    "pages/buy/buy",
+    "pages/car/car",
+    "pages/breadOne/brandOne",
+    
+    
+    
+    
+    
+    "pages/index/index",
+    
+    
+    
+    
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "车报废",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,8 @@
+<view class='container'>
+  <view class="item" bindtap='show' wx:for="{{login}}">
+    <text class="text {{item.gray}}" data-value='{{index}}'>{{item.tit}}</text>
+    <image class="img" src="{{item.src}}" data-value='{{index}}'></image>
+    <view class="alert" hidden='{{item.one}}' data-value='{{index}}'>{{item.itemsInfo}}</view>
+  </view>
+  <button open-type="contact" type="default-light" size="20" session-from="weapp" class="btn" bindtap='btn'>联系在线客服</button>
+</view>

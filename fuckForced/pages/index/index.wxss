@@ -1,0 +1,48 @@
+.container{
+  height: 100vh;
+background: -ms-linear-gradient(top, #d74d40,  #ed7553);        /* IE 10 */
+
+background:-moz-linear-gradient(top,#d74d40,#ed7553);/*火狐*/ 
+
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ed7553), to(#f6f6f8));/*谷歌*/ 
+
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ed7553), to(#0000ff));      /* Safari 4-5, Chrome 1-9*/
+
+background: -webkit-linear-gradient(top, #d74d40, #ed7553);   /*Safari5.1 Chrome 10+*/
+
+background: -o-linear-gradient(top, #d74d40, #ed7553);  /*Opera 11.10+*/
+position: relative;
+}
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #e8bf87;
+}
+.bag{
+  width: 460rpx;
+  height: 300rpx;
+  margin-top:60rpx;
+}
+.Record{
+  color:#e8bf87;
+  position: absolute;
+  right:20rpx;
+  bottom:60rpx;
+  width: 100rpx;
+  height:100rpx;
+  border-radius:50%;
+  line-height: 100rpx;
+  text-align: center;
+  border:1rpx solid #e8bf87;
+}
+    

@@ -1,0 +1,33 @@
+<view class="navBar">
+  <view wx:for="{{navbars}}" data-value="{{index}}" class="ssue {{item.active}}" bindtap='active'>{{item.ac}}</view>
+</view>
+<view class="Prompt" hidden='{{prompt}}'>只展示最近15条浏览记录</view>
+<view class="body" hidden='{{zuiJin}}'>
+  <block class="imgContent">
+    <image class="img" src='{{userInfo.avatarUrl}}'></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+  <view class="items">
+    <view class="countHistory">
+      <view class="text">{{renshu}}</view>
+      <text class="num">{{count}}</text>
+    </view>
+    <view class="moneyHistory">
+      <view class="text">{{shoudao}}</view>
+      <text class="num">{{money}}</text>
+    </view>
+  </view>
+  <view class="what" hidden='{{yous}}'>最近谁看过我的照片？</view>
+</view>
+<view class="footer" wx:for="{{userItem}}">
+  <view class="aside">
+    <view class="imgBlock">
+      <image class="imgFlow" src="{{item.imgSrc}}"></image>
+    </view>
+    <view class="right">
+      <text class="title">{{item.title}}</text>
+      <text class="look">{{item.num}}</text>
+      <text class="time">{{item.date}}</text>
+    </view>
+  </view>
+</view>

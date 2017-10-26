@@ -1,0 +1,133 @@
+<!--pages/rule/rule.wxml-->
+<view class="container">
+    <view class="location">
+      <view class="top clearfix">
+        <image class="img fl" src="../../images/Location-red@2x.png"></image>
+        <text class="locations fl">{{city}}</text>
+      </view>
+    </view>
+    <view class="switching">
+      <text class="locahlost {{tabNum==0?'locahlostActive':''}}" bindtap="checkoutAuto" data-value="0">本地车辆</text>
+      <text class="{{tabNum==1?'locahlostActive':''}} field" bindtap="checkoutAuto" data-value="1">外地车辆</text>
+    </view>
+    <view wx:if="{{tabNum==0}}">
+      <view wx:for="{{local}}">
+        <view class="limtLineOne">限行规则{{index+1}}</view>
+        <view class="item clearfix">
+          <view style="display: inline-block; float: left;" wx:for="{{item.localDataList}}" wx:for-item="number" wx:for-index="eq">
+
+            <view class="firstInfo" id="current" wx:if="{{eq==0}}">
+              <view class="day monday">
+                <view class="num one cbd" wx:if="{{number.numberList.top == '不限行'}}">不限号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '所有号牌'}}">所有号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '开四停四'}}">开四停四</view>
+                 <view class="{{number.numberList.battle}} num one" wx:else>{{number.numberList.top}}</view>
+                <view class="num two">{{number.numberList.bottom}}</view>
+              </view>
+              <view class="first">{{number.weekList}}</view>
+            </view>
+            <view class="firstInfo" wx:if="{{eq<=5 && eq>0}}">
+              <view class="day monday">
+                <view class="num one cbd" wx:if="{{number.numberList.top == '不限行'}}">不限号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '所有号牌'}}">所有号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '开四停四'}}">开四停四</view>
+                 <view class="{{number.numberList.battle}} num one" wx:else>{{number.numberList.top}}</view>
+                <view class="num two">{{number.numberList.bottom}}</view>
+              </view>
+              <view class="first">{{number.weekList}}</view>
+            </view>
+            <view class="lastInfo" wx:if="{{eq==6}}">
+              <view class="day monday">
+                <view class="num one cbd" wx:if="{{number.numberList.top == '不限行'}}">不限号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '所有号牌'}}">所有号牌</view>
+                  <view class="num one cbd" wx:elif="{{number.numberList.top == '开四停四'}}">开四停四</view>
+                 <view class="{{number.numberList.battle}} num one" wx:else>{{number.numberList.top}}</view>
+                <view class="num two">{{number.numberList.bottom}}</view>
+              </view>
+              <view class="first">{{number.weekList}}</view>
+            </view>
+          </view>
+
+        </view>
+        <view class="date">
+          <view class="block"></view>
+          <view class="limitLineDate">限行时间</view>
+          <view class="thatDate">{{item.time}}</view>
+        </view>
+        <view class="region">
+          <view class="block"></view>
+          <view class="limitLineDate quyu">限行区域</view>
+          <view class="regionItem">{{item.area}}</view>
+        </view>
+        <view class="rule">
+          <view class="block"></view>
+          <view class="limitLineDate guize">限行规则</view>
+          <view class="regionItem">{{item.rule}}</view>
+        </view>
+
+      </view>
+      <view class="nolimit" wx:if="{{len1==0}}" >
+        本地车辆不限行
+      </view>
+    </view>
+    <view wx:if="{{tabNum==1}}">
+      <view wx:for="{{nonlocal}}" wx:if="{{tabNum==1}}">
+        <view class="limtLineOne">限行规则{{index+1}}</view>
+        <view class="item clearfix">
+          <view style="display: inline-block; float: left;" wx:for="{{item.localDataList}}" wx:for-item="number" wx:for-index="eq">
+
+            <view class="firstInfo" id="current" wx:if="{{eq==0}}">
+              <view class="day monday">
+                <view class="num one cbd" wx:if="{{number.numberList.top == '不限行'}}">不限号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '所有号牌'}}">所有号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '开四停四'}}">开四停四</view>
+                 <view class="{{number.numberList.battle}} num one" wx:else>{{number.numberList.top}}</view>
+                <view class="num two">{{number.numberList.bottom}}</view>
+              </view>
+              <view class="first">{{number.weekList}}</view>
+            </view>
+            <view class="firstInfo" wx:if="{{eq<=5 && eq>0}}">
+              <view class="day monday">
+                <view class="num one cbd" wx:if="{{number.numberList.top == '不限行'}}">不限号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '所有号牌'}}">所有号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '开四停四'}}">开四停四</view>
+                 <view class="{{number.numberList.battle}} num one" wx:else>{{number.numberList.top}}</view>
+                <view class="num two">{{number.numberList.bottom}}</view>
+              </view>
+              <view class="first">{{number.weekList}}</view>
+            </view>
+            <view class="lastInfo" wx:if="{{eq==6}}">
+              <view class="day monday">
+                <view class="num one cbd" wx:if="{{number.numberList.top == '不限行'}}">不限号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '所有号牌'}}">所有号牌</view>
+                <view class="num one cbd" wx:elif="{{number.numberList.top == '开四停四'}}">开四停四</view>
+                 <view class="{{number.numberList.battle}} num one" wx:else>{{number.numberList.top}}</view>
+                <view class="num two">{{number.numberList.bottom}}</view>
+              </view>
+              <view class="first">{{number.weekList}}</view>
+            </view>
+          </view>
+
+        </view>
+        <view class="date">
+          <view class="block"></view>
+          <view class="limitLineDate">限行时间</view>
+          <view class="thatDate">{{item.time}}</view>
+        </view>
+        <view class="region">
+          <view class="block"></view>
+          <view class="limitLineDate quyu">限行区域</view>
+          <view class="regionItem">{{item.area}}</view>
+        </view>
+        <view class="rule">
+          <view class="block"></view>
+          <view class="limitLineDate guize">限行规则</view>
+          <view class="regionItem">{{item.rule}}</view>
+        </view>
+        <view class="nolimit" wx:if="{{len2==0}}">
+          外地不限行
+        </view>
+      </view>
+    </view>
+
+</view>

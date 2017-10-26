@@ -1,0 +1,12 @@
+<!--车系-->
+<view class="box">
+  <view class="boxInfo" bindtap='carItem' wx:for="{{car}}" data-value="{{item}}" data-index="{{index}}">{{item}}</view>
+  <!-- <view class="boxInfo">2017款 1.8T 手动两驱都市精英型</view>
+  <view class="boxInfo">2017款 1.8T 手动两驱都市进取型</view>
+  <view class="boxInfo">2017款 1.8T 都市进取型</view>
+  <view class="boxInfo">2017款 1.8T 都市进取型</view>
+  <view class="boxInfo">2017款 1.8T 手动两驱都市进取型</view>
+  <view class="boxInfo">2017款 1.8T 都市技术型</view>
+  <view class="boxInfo">2017款 1.8T 自动四驱都市越野型</view>
+  <view class="boxInfo">2017款 1.8T 都市威武型</view> -->
+</view>

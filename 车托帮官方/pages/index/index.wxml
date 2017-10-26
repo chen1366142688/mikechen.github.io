@@ -1,0 +1,40 @@
+<view class="nav">
+    <view class="road item" bindtap="gotoRoad">
+        <image src="../../images/icon_road.png"></image>
+        <view class="txt">
+            小微路况
+        </view>
+    </view>
+    <view class="charge item" bindtap="gotoRecharge">
+        <image src="../../images/icon_recharge.png"></image>
+        <view class="txt">
+            油卡充值
+        </view>
+    </view>
+    <view class="oilprice item" bindtap="gotoOilPrice">
+        <image src="../../images/icon_oilprice.png"></image>
+        <view class="txt">
+            最新油价
+        </view>
+    </view>
+    <view class="carquery item" bindtap="gotoCarQuery">
+        <image src="../../images/icon_carquery.png"></image>
+        <view class="txt">
+            限行查询
+        </view>
+    </view>
+</view>
+<view class="banner">
+    <image src="../../images/icon_companylogo.png"></image>
+</view>
+<view class="content">
+    <view class="content_tit">
+        关于我们
+    </view>
+    <view class="content_con">
+        <view>作为中国最大的车主移动社区，车托帮自2012年成立以来，一直致力于车主出行服务，成为车主出行好帮手。经过五年的发展，车托帮现已拥有2500万车主用户，围绕车主出行服务，打造了一个全方位的车主服务生态圈。</view>
+        <view>车托帮致力打造车主乌托邦圈子，通过整合“车托帮云”大数据系统、车托帮汽车新零售系统、车托帮车主服务系统等业务，在开放融合的形式下为用户提供更为智慧和便利的出行新感受。</view>
+        <view>目前，车托帮旗下包括自媒体微信矩阵、M站、小程序矩阵、APP四大阵营，通过功能、资讯、社交等方式，为用户提供全方位，一站式的服务。现已推出的如：查违章、小微路况、限行查询、最新油价等内容，深受广大车主用户的喜爱。</view>
+        <view>此外，车托帮已成功踏入汽车新零售领域，与居然之家、和谐汽车、车享家等全国性服务平台建立了长期深度的战略合作关系，将整合多方资源，携手开创5S汽车新零售时代。</view>
+    </view>
+</view>

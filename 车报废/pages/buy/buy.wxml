@@ -1,0 +1,24 @@
+<!--报废补贴-->
+<!--总容器-->
+<view class="contentBox">
+  <!--灰色背景-->
+  <view class="imgTextContent" wx:for="{{item}}">
+      <block class="imgContainer">
+        <image class="img" src='{{item.imgSrc}}'></image>
+      </block>
+      <view class="btn clearfix">
+        <view class="moneyNotes fl">新车换购补贴金额</view>
+        <view class="money fr">¥ {{item.money}}</view>
+      </view>
+  </view>
+  <!--详细说明-->
+  <view class="body" wx:for="{{buy}}">
+    <view class="item">
+      <image class="imgItem" src="../../images/换购补贴icon.png"></image>
+      <text class="notes">{{item.carBuy}}</text>
+    </view>
+    <view class="manuFacturer">厂商：{{item.manufacturer}}</view>
+    <view class="time">企业补贴时间：{{item.time}}</view>
+    <view class="guidePrice">指导价：¥{{item.Guide}}万</view>
+  </view>
+</view>

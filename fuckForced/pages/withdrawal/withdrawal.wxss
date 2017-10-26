@@ -1,0 +1,105 @@
+.fl{
+	float: left;
+}
+.fr{
+	float:right;
+}
+/*清浮动*/
+.clearfix:after{
+	display: block; 
+	content: ''; 
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+.box{
+  height:100vh;
+  width:660rpx;
+  background: #fbf9fe;
+  padding:100rpx 45rpx 50rpx 45rpx;
+  position: relative;
+}
+.content{
+  width:660rpx;
+  height:720rpx;
+  background: #fff;
+}
+.contentOne{
+  width:570rpx;
+  height:100rpx;
+  line-height: 80rpx;
+  padding:50rpx 45rpx 10rpx 45rpx;
+  background: #fdfdfd;
+}
+.withdrawal{
+  margin-left:40rpx;
+  font-size: 34rpx;
+}
+.balance{
+  font-size: 34rpx;
+}
+.text{
+  font-size: 40rpx;
+  color:#999999;
+}
+.diot{
+  width:570rpx;
+  font-size: 34rpx;
+  padding:0 45rpx;
+}
+.money{
+  width:570rpx;
+  margin:0 45rpx;
+  font-size: 70rpx;
+  padding:20rpx 0;
+  border-bottom:2rpx solid #d9d9d9;
+}
+.moneys{
+  display:inline-block;
+  width:70rpx;
+  font-weight:blod;
+}
+.digit{
+  display: inline-block;
+  width:490rpx;
+  padding-left:10rpx;
+}
+.Actual{
+  width:570rpx;
+  padding:30rpx 45rpx;
+  font-size:26rpx;
+}
+.artical{
+  display:inline-block;
+  color: #999999;
+}
+.allMoney{
+  display:inline-block;
+  color: #586c94;
+}
+.btn{
+  width:570rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  margin:0 45rpx;
+  border-radius:5rpx solid #9ed99d; 
+  background: #9ed99d;
+  color: #fff;
+  font-size: 36rpx;
+}
+.aside{
+  color: #999999;
+  font-size: 26rpx;
+  width:570rpx;
+  padding:40rpx 45rpx 0 45rpx;
+  text-align: center;
+}
+.changJian{
+  color: #586c94;
+  font-size: 26rpx;
+  text-align: center;
+  position: absolute;
+  left:0;right:0;bottom:60rpx;
+  margin:0 auto;
+}

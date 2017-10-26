@@ -1,0 +1,111 @@
+page{
+  padding-bottom:60rpx;
+}
+.navBar{
+  width:750rpx;
+  height:90rpx;
+  line-height: 90rpx;
+  font-size: 34rpx;
+  color: #acacac;
+  background: #ffffff;
+}
+.ssue{
+  display: inline-block;
+  width:250rpx;
+  text-align: center;
+}
+.active{
+  color: #ee3749;
+  border-bottom:2rpx solid #d44d37;
+}
+.body{
+  background: #f2f7f1;
+  width:750rpx;
+  height:410rpx;
+  padding-top:30rpx;
+}
+.imgContent{
+  width:750rpx;
+  text-align: center;
+}
+.img{
+  display: block;
+  width: 128rpx;
+  height: 128rpx;
+  margin:0 auto;
+  border-radius: 50%;
+}
+.userinfo-nickname{
+  display: block;
+  color: #4a5b79;
+  text-align: center;
+}
+.items{
+  width:650rpx;
+  margin: 0 auto;
+}
+.countHistory,.moneyHistory{
+  display: inline-block;
+  width:325rpx;
+  text-align: center;
+}
+.text{
+  font-size: 30rpx;
+  color: #9d9d9d;
+}
+.num{
+  font-size: 50rpx;
+  font-weight:bold;
+}
+.what{
+  width:750rpx;
+  display: block;
+  text-align: center;
+  color: #4a5b79;
+  margin-top:50rpx;
+  font-size: 26rpx;
+}
+.footer{
+  width:690rpx;
+  padding:0 30rpx;
+}
+.aside{
+  border-bottom:2rpx solid #dadada;
+  padding:20rpx 0;
+}
+.imgBlock{
+  display: inline-block;
+  width:120rpx;
+  height:120rpx;
+  border-radius: 5rpx;
+  border:1rpx solid #ddd;
+}
+.imgFlow{
+  display: block;
+  width:120rpx;
+  height:120rpx;
+}
+.right{
+  display:inline-block;
+  margin-left:20rpx;
+}
+.right text{
+  display: block;
+}
+.title{
+  font-size: 30rpx;
+}
+.look,.time{
+  font-size: 26rpx;
+  color: #9d9d9d;
+}
+.Prompt{
+  width:750rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  background: #f5f5f5;
+  color: #c7c7c7;
+  text-align: center;
+  font-size: 30rpx;
+  padding:10rpx 0;
+}

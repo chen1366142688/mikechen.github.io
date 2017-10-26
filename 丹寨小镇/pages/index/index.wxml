@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container flex-wrap flex-direction-col">
+  <view class="my-swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+ <p>
+    您好！这是一份来自车托帮-覆盖上亿车主社区平台的诚挚邀请，2017年10月28-29日将在贵州丹寨万达小镇举行“镇长就职仪式暨车托帮+互联网汽车开放平台启动仪式”。车托帮成立于2012年6月，是首家基于地图导航技术的车主出行共享社区，旗下拥有微路况、查违章等一系列微信生态矩阵，海量覆盖上亿车主用户，是最大移动车主社区、最强移动车主媒体平台。即将发布的车托帮+互联网汽车开放平台（Autopia Internet Open car platform），将涵盖车主社区及城市合伙人+，汽车圈创业者+、汽车圈投资人+，新聚合平台将于2017年10月28日15：00正式启动，现诚挚邀请您的光临，与我们一同见证历史时刻！
+  </p >
+  <p>
+    丹寨万达小镇是车托帮上亿车主评选出来的10月中国最美田园小镇和最美自驾游目的地。丹寨小镇是一个扶贫项目，去丹寨旅游就是扶贫，这是新时代的扶贫、响应国家号召的精准扶贫。车托帮要用我们上亿车主的力量，帮助地方贫困县、帮助边远民族地区脱困，既帮助扶贫，又帮助致富，“全国车主看贵州，贵州车主看丹寨！”
+  </p >
+  <p>
+    丹寨万达小镇是万达集团和丹寨县政府联合打造，以非物质文化遗产、苗族、侗族文化为内核，融商业文化、休闲、旅游为一体，旨在打造一个集“吃、住、行、游、购、娱、教”为一体的精品旅游综合体。
+  </p >
+  <button bindtap="btnForm" type="text" class="btn">立即报名</button>
+</view>

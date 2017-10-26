@@ -1,0 +1,194 @@
+<view class="main">
+
+  <view class="mod-main">
+    <view class="mod-sky"></view>
+    <view class="mod-road mod-posrelative">
+
+      <view class="marquee">
+        <view class="marquee-road clearfix">
+          <view class="line-bar fl"></view>
+          <view class="line-bar fl"></view>
+          <view class="line-bar fl"></view>
+          <view class="line-bar fl"></view>
+          <view class="line-bar fl"></view>
+          <view class="line-bar fl"></view>
+        </view>
+      </view>
+      <view class="car-animate">
+        <view class="car-main"></view>
+        <view class="car-shadow"></view>
+      </view>
+    </view>
+  </view>
+  <view class="detail-box">
+    <view class="detail-info">
+      <view class="detail-location">
+        <view class="cityname" bindtap="bindChoseLocation" hidden="{{locationErrorItem}}">
+          <view class="location-icon"></view>
+          <view class="location-tit">{{cityName}}</view>
+        </view>
+        <view class="cityname" hidden="{{locationErrorInfo}}">
+          <view class="location-icon"></view>
+          <view class="location-tit">{{cityErrorName}}</view>
+        </view>
+      </view>
+      <view class="detail-msg">
+        今日限行尾号
+      </view>
+      <view class="locationError" hidden="{{locationErrorInfo}}">{{locationError}}</view>
+      <view class="detail-num-box" wx:if="{{tabNum==0}}" hidden="{{locationErrorItem}}">
+        <view class="detail-num mod-mr35" wx:if="{{isTextlocal==false && singlelocal ==false}}">{{todayNum.left}}</view>
+        <view class="detail-num" wx:if="{{singlelocal==true}}">{{todayNum.left}}</view>
+        <view class="detail-num" wx:if="{{isTextlocal==false && singlelocal ==false}}">{{todayNum.right}}</view>
+        <view class="detail-num2" wx:if="{{isTextlocal==true}}">{{todayNum.left}}</view>
+      </view>
+
+      <view class="detail-num-box" wx:if="{{tabNum==1}}" hidden="{{locationErrorItem}}">
+        <view class="detail-num mod-mr35" wx:if="{{isTextnon==false && singlenon ==false}}">{{todayNumnon.left}}</view>
+        <view class="detail-num" wx:if="{{singlenon==true}}">{{todayNumnon.left}}</view>
+        <view class="detail-num" wx:if="{{isTextnon==false && singlenon ==false}}">{{todayNumnon.right}}</view>
+        <view class="detail-num2" wx:if="{{isTextnon==true}}">{{todayNumnon.left}}</view>
+      </view>
+
+    </view>
+  </view>
+  <view class="info-box">
+    <view class="mod-road info-date">
+      <view class="detail-date clearfix" hidden="{{locationErrorItem}}">
+        <view class="detail-tit">
+          <view class="detail-item fl">{{DateObj.date}}·{{DateObj.week}}</view>
+          <view class="detail-item fr">{{weatherData.weather}}·{{weatherData.temperature}}℃</view>
+        </view>
+      </view>
+    </view>
+    <view class="info-board">
+      <view class="info-hd-container">
+        <view class="info-hd clearfix">
+          <view class="info-tit fl">一周限号</view>
+          <view class="info-link-rule fr mod-posrelative" wx:if="{{isLimit==true}}" hidden="{{locationErrorItem}}" bindtap="bindJumpRule">
+            限行规则
+            <view class="info-link-arrow"></view>
+          </view>
+          <view class="info-link-rule fr mod-posrelative" hidden="{{locationErrorItem}}" wx:if="{{isLimit==false}}"  >
+            无限行规则
+          </view>
+          <!--定位失败限行规则不可点击-->
+          <view class="info-link-rule fr mod-posrelative" hidden="{{diss}}">
+            限行规则
+          </view>
+        </view>
+      </view>
+      <view class="info-bd" wx:if="{{tabNum==0}}">
+      <view class="locationBug" hidden="{{locationErrorInfo}}">未获得定位授权，请重新关注并授权</view>
+        <view class="info-item"  wx:for="{{local}}" hidden="{{locationErrorItem}}">
+          <view class="week-item fl clearfix" wx:if="{{index==0}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w2">
+              <view class="week-tit">{{item.text}}(今天)</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==1}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w1">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==2}}">
+            <view class="week-info week-w2">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==3}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w3">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==4}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w3">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==5}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w3">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==6}}">
+            <view class="week-info week-w3">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="info-bd" wx:if="{{tabNum==1}}">
+      <view class="locationBug" hidden="{{locationErrorInfo}}">未获得定位授权，请重新关注并授权</view>
+        <view class="info-item" wx:for="{{nonlocal}}" hidden="{{locationErrorItem}}">
+          <view class="week-item fl clearfix" wx:if="{{index==0}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w2">
+              <view class="week-tit">{{item.text}}(今天)</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==1}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w1">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==2}}">
+            <view class="week-info week-w2">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==3}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w3">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==4}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w3">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==5}}">
+            <view class="week-line fr"></view>
+            <view class="week-info week-w3">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+          <view class="week-item fl clearfix" wx:if="{{index==6}}">
+            <view class="week-info week-w3">
+              <view class="week-tit">{{item.text}}</view>
+              <view class="week-inner">{{item.number}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="tab-btn local-btn {{tabNum==0?'current-btn':''}}" bindtap="bindReSetTab" data-index="0">
+    <view class="tab-tit">本地车辆</view>
+  </view>
+  <view class="tab-btn nonlocal-btn {{tabNum==1?'current-btn':''}}" bindtap="bindReSetTab" data-index="1">
+    <view class="tab-tit">外地车辆</view>
+  </view>
+</view>

@@ -1,0 +1,146 @@
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+page{
+    background: #fff;
+    font-family: "PingFang SC"; 
+    padding: 0;   
+}
+.img_bg{
+  width: 750rpx;
+  height: 288rpx;
+  display: block;
+  margin-top: -1rpx;
+}
+.city_btn{
+  position: absolute;
+  top: 100rpx;
+  height: 80rpx;
+  border: 2px solid #fff;
+  left: 50%;
+  transform:translateX(-50%);
+  padding: 0 30rpx;
+  background: rgba(255,255,255,0.3);
+}
+.icon_1{
+  width: 22rpx;
+  height: 29rpx;
+  margin-top: 24rpx;
+  margin-right: 10rpx;
+}
+.icon_2{
+  width: 26rpx;
+  height: 14rpx;
+  margin-top:35rpx;
+}
+.city_name{
+  font-size: 36rpx;
+  color:#4f5761;
+  margin-top: 14rpx;
+  margin-right: 10rpx;
+}
+.today_text{
+    position: absolute;
+    top: 310rpx;
+}
+.text_1{
+    margin-left: 50rpx;
+    font-size: 36rpx;
+    color: #323d49;
+    margin-right: 20rpx;
+}
+.text_2{
+    color: #333d49;
+    font-size: 26rpx;
+    margin-top: 10rpx;
+}
+.containers{
+    margin-top: 86rpx;
+}
+.oil{
+    height: 150rpx;
+    line-height: 150rpx;
+    position: relative;
+    background: #11d096;
+    width: 690rpx;
+    margin: 0 auto;
+    margin-bottom: 20rpx;
+    border-radius: 10rpx;
+}
+.oil:nth-child(1 ){
+    margin-bottom: 1
+}
+.number{
+    font-size: 44rpx;
+    color: #fff;
+    margin-left: 30rpx;
+    width:46rpx;
+    text-align: center;
+}
+.fh{
+    font-size: 24rpx;
+    color:#fff;
+    position: absolute;
+    top: -8rpx;
+    left: 94rpx;
+    height: 24rpx;
+}
+.hz{
+    margin-left: 60rpx;
+    font-size: 26rpx;
+    color:#fff; 
+}
+.red_area{
+    width: 300rpx;
+    height: 90rpx;
+    border-radius: 10rpx;
+    line-height: 100rpx;
+    position: relative;
+    margin-top: 25rpx;
+    margin-left: 174rpx;
+}
+.money_data{
+    font-size: 90rpx;
+    color: #fff;
+    height: 90rpx;
+    line-height: 90rpx;
+}
+.money_text{
+    font-size: 26rpx;
+    color: #fff;
+    position: absolute;
+    bottom: 12rpx;
+    right: 0;
+    height: 26rpx;
+    line-height: 26rpx;
+}
+.up,.down{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    right: 30rpx;
+    top: 14rpx;
+}
+
+.logo{
+    width: 190rpx;
+    height: 42rpx;
+    position: absolute;
+    bottom: 20rpx;
+    right: 30rpx;
+}
+.no{
+  font-size:36rpx;
+  margin-top: 200rpx;
+  text-align: center;
+  color: #808790;
+  height: 534rpx;
+}
+.shuoming{
+  font-size: 26rpx;
+  color: #cccccc;
+  text-align: center;
+}

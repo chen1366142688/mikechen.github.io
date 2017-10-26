@@ -1,0 +1,97 @@
+
+.box{
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:100rpx;
+  background: -ms-linear-gradient(top, #d74d40,  #ed7553);        /* IE 10 */
+
+background:-moz-linear-gradient(top,#d74d40,#ed7553);/*火狐*/ 
+
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ed7553), to(#f6f6f8));/*谷歌*/ 
+
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ed7553), to(#0000ff));      /* Safari 4-5, Chrome 1-9*/
+
+background: -webkit-linear-gradient(top, #d74d40, #ed7553);   /*Safari5.1 Chrome 10+*/
+
+background: -o-linear-gradient(top, #d74d40, #ed7553);  /*Opera 11.10+*/
+}
+.topImg{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:400rpx;
+  height:300rpx;
+  border: 25rpx solid #fcfaed;
+}
+.topImgInfo{
+  display: block;
+  width:400rpx;
+  height:300rpx;
+}
+.noteInfo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:40rpx;
+}
+.notes{
+  color: #e8bf87;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:580rpx;
+  height:120rpx;
+  padding:40rpx;
+  border-radius: 12rpx;
+  background: #fcfaed;
+  box-shadow: 0px 4px 14px rgba(254,228,179,.5);
+  margin-top:40rpx;
+}
+.describe{
+  border-bottom:2rpx solid #fee4b3;
+  padding-bottom:14rpx;
+  font-size: 34rpx;
+}
+.dat{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  font-size: 34rpx;
+  color: #993a31;
+  padding-top:15rpx;
+}
+/* .reward{
+  font-size: 34rpx;
+  padding-top:12rpx;
+  color: #993a31;
+}*/
+.start{
+  display: inline-block;
+  width:40rpx;
+  padding-left:20rpx;
+  margin-top:-2rpx;
+} 
+.btn{
+  background:#ffe2b1;
+  color: #d84e43;
+  width:660rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 12rpx;
+  margin:40rpx auto 0 auto;
+  font-size: 34rpx;
+}
+.wrning{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  font-size: 34rpx;
+  color: #ffe2b1;
+  width:660rpx;
+  margin-top:40rpx;
+}

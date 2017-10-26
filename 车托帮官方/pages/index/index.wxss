@@ -1,0 +1,52 @@
+page{
+    padding-top: 30rpx;
+    border-top:1rpx solid #d8d8d8;
+}
+image{
+    width: 62rpx;
+    height: 62rpx;
+    margin:0 auto;
+}
+.txt{
+    font-size: 24rpx;
+    height: 24rpx;
+    line-height: 24rpx;
+    text-align: center;
+    margin-top: 16rpx;
+}
+.nav{
+    display: flex;
+}
+.item{
+    flex: 1;
+}
+.banner{
+    margin-top: 40rpx;
+    margin-bottom: 40rpx;
+}
+.banner image{
+    width: 266rpx;
+    height: 140rpx;
+    border-radius: 10rpx;
+    margin: 0 auto;
+}
+.content{
+    margin-top: 40rpx;
+    width: 670rpx;
+    margin: 0 auto;
+}
+.content_tit{
+    font-size: 36rpx;
+    height: 36rpx;
+    line-height: 36rpx;
+    text-align: center;
+    margin-bottom: 20rpx;
+}
+.content_con{
+    font-size: 26rpx;
+    line-height: 42rpx;
+    padding-bottom: 30rpx;
+}
+.content_con view{
+    text-indent: 2em;
+}

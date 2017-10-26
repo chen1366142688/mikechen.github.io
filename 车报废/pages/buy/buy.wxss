@@ -1,0 +1,70 @@
+.contentBox{
+  width:750rpx;
+}
+.imgTextContent{
+  width:690rpx;
+  padding:30rpx;
+  background: #e6e7e8;
+}
+.imgContainer{
+  width:690rpx;
+  height:330rpx;
+}
+.img{
+  width:690rpx;
+  height:330rpx;
+}
+.btn{
+  width:630rpx;
+  padding:0 30rpx;
+  height:98rpx;
+  line-height: 98rpx;
+  background: #3AD48B;
+  box-shadow: 0 10px 20px 0 rgba(80,158,111,0.23);
+  border-radius: 8px;
+  margin-top:30rpx;
+}
+.moneyNotes{
+  opacity: 0.8;
+  font-family: PingFangSC-Light;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.money{
+  font-family: PingFangSC-Medium;
+  font-size: 40rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.body{
+  width:690rpx;
+  padding:0 30rpx;
+}
+.item,.manuFacturer,.time,.guidePrice{
+  height:98rpx;
+  line-height: 98rpx;
+  border-bottom: 2rpx solid #E5E5E5;
+}
+.item{
+  padding-left:10rpx;
+}
+.imgItem{
+  width:60rpx;
+  height:60rpx;
+  vertical-align: middle;
+}
+.notes{
+  font-family: PingFangSC-Light;
+  font-size: 28rpx;
+  color: #4A4A4A;
+  letter-spacing: 0;
+  padding-left:20rpx;
+}
+.manuFacturer,.time,.guidePrice{
+  font-family: PingFangSC-Light;
+  font-size: 28rpx;
+  color: #9B9B9B;
+  letter-spacing: 0;
+  padding-left:90rpx;
+}

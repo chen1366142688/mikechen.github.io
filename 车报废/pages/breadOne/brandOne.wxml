@@ -1,0 +1,9 @@
+<!--车辆品牌-->
+<view class="box">
+  <view class="boxInfo" bindtap='carClick' wx:for='{{carTwo}}' data-value="{{item}}" data-id="{{index}}">{{item}}</view>
+  <!-- <view class="boxInfo">昂科威</view>
+  <view class="boxInfo">君越</view>
+  <view class="boxInfo">君威</view>
+  <view class="boxInfo">特斯拉</view>
+  <view class="boxInfo">昂科雷</view> -->
+</view>

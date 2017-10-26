@@ -1,0 +1,27 @@
+
+
+<scroll-view class="swiper-content" style="height:{{winHeight}}px" scroll-y="true" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" >
+<!--品牌列表 A-->
+ <view class="brand-scroll">
+    <view class="brand-item" wx:for="{{brandList}}" wx:for-index="letterIndex" wx:for-item="letterItem">
+        <text id="{{letterItem.flag}}">{{letterItem.flag}}</text>
+         <view wx:for="{{letterItem.items}}" wx:for-item="carItem" bindtap="showDrawer" data-id="{{carItem.pbid}}">
+            <image class="img img-list" src="https://img{{num}}.xcarimg.com/PicLib/logo/pl{{carItem.pbid}}_160s.png"  mode="aspectFit"></image>
+            <view class="brand-name">{{carItem.pbname}}</view>
+        </view> 
+    </view>
+ </view>
+<!--品牌列表 Z-->
+</scroll-view>
+<!--字母列表 S-->
+<view class="letter-item {{ismove==1?'letter-hover':''}}" bindtap ="clickLetter" catchtouchmove="touchMove" catchtouchend="touchEnd">
+    <!-- <view class="letter-li" data-letter="hot">热</view> -->
+    <view class="letter-li {{selected == letterIndex ? ' red':' '}}" data-current="{{letterIndex}}" wx:for="{{brandList}}" wx:for-item="letterItem" wx:for-index="letterIndex" data-letter="{{letterItem.flag}}" >{{letterItem.flag}}</view>
+</view>
+<!--字母列表 E-->
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<view class="box">
+  <view class="content">
+    <view class="contentOne">
+      <view class="balance fl">账户余额</view>
+      <view class="withdrawal fl">
+        <text class="text">{{balance}}</text> 元
+      </view>
+    </view>
+    <view class="diot">提现金额</view>
+    <view class="money clear">
+      <view class="moneys">¥</view>
+      <input type="digit" value="{{dig}}" class="digit"></input>
+    </view>
+    <view class="Actual">
+      <view class="artical">手续费8%，实际到账{{actualMonry}}元，</view>
+      <view class="allMoney">全部提现</view>
+    </view>
+    <button type='button' class="btn">提现</button>
+    <view class="aside">提现到微信钱包，1-5个工作日到账</view>
+  </view>
+  <view class="changJian" bindtap='problem'>常见问题</view>
+</view>

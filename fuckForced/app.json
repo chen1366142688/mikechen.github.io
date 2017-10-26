@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/photoCreat/photoCreat",
+    "pages/withdrawal/withdrawal",
+    "pages/myself/myself",
+    "pages/order/order",
+    "pages/photo/photo",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#da4c40",
+    "navigationBarTitleText": "骚客之家",
+    "navigationBarTextStyle": "write"
+  },
+  "tabBar": {
+    "color": "#b25d3e",
+    "selectedColor": "#b25d3e",
+    "borderStyle": "white",
+    "backgroundColor": "#fce0ae",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/dou.png",
+        "selectedIconPath": "images/dou.png"
+      },
+      {
+        "pagePath": "pages/withdrawal/withdrawal",
+        "iconPath": "images/dou2.png",
+        "selectedIconPath": "images/dou2.png",
+        "text": "余额提现"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "iconPath": "images/dou3.png",
+        "selectedIconPath": "images/dou3.png",
+        "text": "常见问题"
+      }
+    ]
+  }
+}

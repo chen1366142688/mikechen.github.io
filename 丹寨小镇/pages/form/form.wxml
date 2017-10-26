@@ -1,0 +1,6 @@
+<view class="box">
+    <image src="../../images/bg.png" class="main"></image>
+    <input type="text" placeholder="请输入姓名" bindblur='name' class="name"/>
+    <input type="number" placeholder="请输入电话号码"  bindblur='phone' class="name phone"/>
+    <button bindtap="beautyProgrammer" type="text" class="btn">立即报名</button>
+</view>

@@ -1,0 +1,27 @@
+/**app.wxss**/
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清浮动*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+page{
+  font-family: "PingFang SC";
+}
+image{
+  display: block;
+}
+btn:after{
+  border-radius: 0;
+  border: none;
+}

@@ -1,0 +1,11 @@
+<view class="thisCity clearfix">
+    <image src="../../images/Location-red@2x.png" class="icon_loc fl"></image>
+    <view class="cityName fl">{{city}}</view>
+</view>
+<view class="line"></view>
+<view class="text1">
+    国内热门城市
+</view>
+<view class="allCityName">
+    <view class="city_item"  wx:for="{{citys}}" data-value="{{item.city}}" data-key="{{item.cityname}}" bindtap="select">{{item.cityname}}</view>
+</view>

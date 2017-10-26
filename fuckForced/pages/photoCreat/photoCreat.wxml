@@ -1,0 +1,19 @@
+<form enctype="multipart/form-data" bindsubmit="formSubmit">
+<view class="box">
+  <view class="topImg">
+    <image class="topImgInfo" src='{{imgSrc}}' style='-webkit-filter:blur(10px);filter:blur(10px)'></image> 
+  </view>
+  <view class='noteInfo'>
+    <view class="notes">未发红包的朋友只能看到模糊的照片</view>
+  </view>
+  <view class="item">
+    <input name="sex" class="describe" type='text' placeholder='描述一下这张照片，获得更多关注'></input>
+    <view class="dat">
+      <text class="daxi">打赏金额：</text>
+      <input name="input" type='digit' class="start" placeholder='0'></input>元
+    </view>
+  </view>
+  <button formType="submit" class="btn" >生成红包照片</button>
+  <view class="wrning">请勿上传色情以及违禁照片，本小程序有权在收到后删除相应内容</view>
+</view>
+</form>

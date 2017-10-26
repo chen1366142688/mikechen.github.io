@@ -1,0 +1,50 @@
+<view class="search clearfix"> 
+    <input class="search-input fl" placeholder="请输入省份" id="mainInput" value="{{userInput}}" bindtap="bindFocus" bindblur="blurFocus" bindinput="submit">
+        <icon type="search" size="15" color="#4f5761" class="search-icon inside"/>
+    </input>
+    <view class="cancel fl" id="clearValue" bindtap="clearInput"><image class="cancels" src="../../images/icon_cancel.png" hidden="{{times}}"></image></view>
+</view>
+<!--关键词-->
+<view class="guanlian" hidden="{{guanL}}" wx:for="{{guan}}">
+   <view class="hotcity_list" bindtap="matols" id="{{index}}">{{item}}</view>
+</view>
+<view class="otherArea" hidden="{{hide}}">
+  <view class="geo clearfix" data-city="{{locations}}" bindtap="mast">
+    <view class="now_geo fl">当前定位城市</view>
+    <view class="nowGeoCity fr">{{locations}}</view>
+</view>
+<view class="hot_city clearfix">
+    <image src="../../images/icon_hot.png" class="hotIcon fl"></image>
+    <view class="textHot fl">
+        热门省份
+    </view>
+</view>
+<view data-city="北京" class="hotcity_list" bindtap="mast">北京</view>
+<view data-city="天津" class="hotcity_list" bindtap="mast">天津</view>
+<view data-city="上海" class="hotcity_list" bindtap="mast">上海</view>
+<view data-city="广东" class="hotcity_list" bindtap="mast">广东</view>
+<view data-city="山东" class="hotcity_list" bindtap="mast">山东</view>
+<view class="searchLetter touchClass">
+  <view wx:for="{{searchLetter}}" style="height:{{itemH}}px" wx:key="index" data-letter="{{item.initial}}" catchtouchstart="searchStart" catchtouchmove="searchMove" catchtouchend="searchEnd">
+  
+  </view>
+</view>
+
+<block wx:if="{{isShowLetter}}">
+<view class="showSlectedLetter">
+    {{showLetter}}
+</view>
+</block>
+<view style="display:none;">当前选择省市：{{city}}</view>
+<view style="height:{{winHeight}}px" bindscroll="bindScroll" scroll-top="{{scrollTop}}">
+     <view class="selection" wx:for="{{finalCityList}}" wx:key="{{item.initial}}">
+     <view wx:if="{item.cityInfo.length==0}} ">
+        <view class="item_letter">{{item.initial}}</view>
+        <view class="item_city" wx:for="{{item.cityInfo}}" wx:for-item="ct" wx:key="{{ct.code}}" data-city="{{ct.city}}" bindtap="bindCity" bindtap="mast" id="{{ct.code}}">
+              {{ct.city}}  
+        </view>
+    </view>
+    </view>
+</view>
+
+</view>

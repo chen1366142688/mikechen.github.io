@@ -1,0 +1,17 @@
+.box{
+  background: #f3f4f5;
+  height:100vh;
+  padding-top:10rpx;
+}
+.boxInfo{
+  width:750rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  margin-bottom:2rpx;
+  background: #ffffff;
+  text-indent: 40rpx;
+  font-family: PingFangSC-Light;
+  font-size: 28rpx;
+  color: #4A4A4A;
+  letter-spacing: 0;
+}
